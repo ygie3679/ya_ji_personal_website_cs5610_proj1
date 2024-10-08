@@ -1,0 +1,95 @@
+body {
+  background-color: floralwhite;
+  font-family: "Lava Devanagari"a;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: lightseagreen;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: darkcyan;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+h1 {
+  font-size: xxx-large;
+  color: teal;
+}
+
+.typewriter {
+  position: relative;
+  top: 100px;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(60) ;
+  color: slategray;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.box {
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.box-left {
+  /*background-color: #04AA6D;*/
+  font-size: large;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start
+}
+
+.box-left ul {
+  list-style-type: none;
+  line-height: 1.8;
+  color: teal;
+}
+
+.box-left h1 {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.box-right {
+  /*background-color: red;*/
+  font-size: large;
+  color: slategray;
+  line-height: 1.8;
+  flex-direction: column;
+}
