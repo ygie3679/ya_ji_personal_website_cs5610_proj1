@@ -8,13 +8,43 @@
   <link rel="stylesheet" href="../about.css">
 </head>
 <body>
-  <header>
-    <div class="navbar">
-      <a href="../">About</a>
-      <a href="../projects">Projects</a>
-      <a href="../contact-info">Contact Info</a>
-      <a class="active" href="/more">More</a>
+<header>
+  <div class="navbar">
+    <span class="navbar-title">Ya Ji</span>
+    <a href="../">About</a>
+    <a href="../projects">Projects</a>
+    <a href="../contact-info">Contact Info</a>
+    <a class="active" href="/more">More</a>
+  </div>
+</header>
+
+<section class="photo-gallery">
+  <input type="radio" name="photos" id="photo1" checked>
+  <input type="radio" name="photos" id="photo2">
+  <input type="radio" name="photos" id="photo3">
+
+  <div class="photo-window">
+    <div class="photo-slides">
+      <div class="photo-slide" id="slide1">
+        <img src="photo1.jpg" alt="Photo 1">
+        <div class="photo-description">This is the description for Photo 1</div>
+      </div>
+      <div class="photo-slide" id="slide2">
+        <img src="photo2.jpg" alt="Photo 2">
+        <div class="photo-description">This is the description for Photo 2</div>
+      </div>
+      <div class="photo-slide" id="slide3">
+        <img src="photo3.jpg" alt="Photo 3">
+        <div class="photo-description">This is the description for Photo 3</div>
+      </div>
     </div>
-  </header>
+  </div>
+
+  <div class="arrows">
+    <label for="photo1" class="left-arrow">&#10094;</label>
+    <label for="photo2" class="right-arrow">&#10095;</label>
+  </div>
+</section>
+
 </body>
 </html>

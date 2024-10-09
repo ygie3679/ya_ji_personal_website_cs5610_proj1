@@ -1,0 +1,99 @@
+.photo-gallery {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  margin-top: 50px;
+}
+
+.photo-window {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  background-color: lightgray;
+  overflow: hidden;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Slides container */
+.photo-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Slide styling */
+.photo-slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.photo-slide img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.photo-description {
+  height: 20%;
+  background-color: #f0f0f0;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Radio-based navigation */
+#photo1:checked ~ .photo-window .photo-slides {
+  transform: translateX(0%);
+}
+
+#photo2:checked ~ .photo-window .photo-slides {
+  transform: translateX(-100%);
+}
+
+#photo3:checked ~ .photo-window .photo-slides {
+  transform: translateX(-200%);
+}
+
+/* Arrow styling */
+.arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.left-arrow, .right-arrow {
+  cursor: pointer;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+label[for="photo1"] {
+  left: 20px;
+}
+
+label[for="photo2"] {
+  right: 20px;
+}

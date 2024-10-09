@@ -1,0 +1,99 @@
+
+.contact {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 30px;
+}
+
+.contact h2 {
+  margin-top: 10%;
+  color: teal;
+  font-size: xxx-large;
+}
+
+.gird-container {
+  padding: 20px;
+  margin-bottom: 15%;
+  top: 50%;
+  left: 10%;
+  height: 80%;
+  justify-content: center;
+  display: grid;
+  grid-template-areas:
+                "header header"
+                "left1 right1"
+                "left2 right2";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  color: midnightblue;
+}
+
+.child {
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  min-height: 100px;
+  border: 1px solid grey;
+
+}
+
+.child:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight:bold;
+}
+
+header {
+  grid-area: header;
+  background-color: greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  border: 1px solid grey;
+
+}
+
+.left1 {
+  grid-area: left1;
+  background-color: mediumaquamarine;
+}
+
+.right1 {
+  grid-area: right1;
+  background-color: powderblue;
+}
+
+.left2 {
+  grid-area: left2;
+  background-color: skyblue;
+}
+
+.right2 {
+  grid-area: right2;
+  background-color: mediumturquoise;
+}
+
+@media (max-width: 600px){
+  .contact {
+    padding: 15px;
+  }
+
+  .contact h2 {
+    font-size: large;
+  }
+
+  header {
+    font-size: medium;
+  }
+
+  .child {
+    font-size: medium;
+    min-height: 60px;
+  }
+}
+
+
